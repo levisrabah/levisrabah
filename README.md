@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @levisrabah
 - 👀 I’m interested in programming having in mind that "PROGRAMMING IS THE ART OF BREAKING AND FIXING THINGS"
-- 🌱 I’m currently learning JavaScript, Python
+- 🌱 I’m currently learning JavaScript,
 - 💞️ I’m looking to collaborate on building real life systems to solve various world problems
 - 📫 How to reach me ...
 - 😄 Pronouns: ...
