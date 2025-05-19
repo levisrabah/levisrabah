@@ -61,6 +61,6 @@ Feel free to reach out if you're interested in collaborating or just want to cha
 
 *Random Dev Quote:*
 
-> *"First, solve the problem. Then, write the code."* – John Johnson
+> *"First, solve the problem. Then, write the code."* 
 
 ---
