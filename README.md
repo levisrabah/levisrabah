@@ -1,70 +1,33 @@
-# 👋 Hello there! I'm Levis Rabah
+## 👋 Hello there! I'm Levis Rabah
+### Software Engineer
 
-> *"Programming is the art of breaking and fixing things—a process that fuels innovation."*
-
-I am a passionate **Full Stack Software Developer** based in Nairobi, Kenya, dedicated to building **scalable, real-life systems** that address complex challenges. My core focus is on crafting robust backend services and intuitive frontend experiences.
-
----
-
-## 🛠️ Comprehensive Skill Stack
-
-As a full-stack developer, I work across the entire application lifecycle.
-
-### 🌐 Frontend Development
-| Skill | Technologies |
-| :--- | :--- |
-| **Core** | HTML5, CSS3, JavaScript (ES6+) |
-| **Frameworks** | **React.js**, **Next.js** |
-| **Styling** | Tailwind CSS, Bootstrap, Material UI |
-
-### 💻 Backend Development
-| Skill | Technologies |
-| :--- | :--- |
-| **Primary Languages** | **Python**, **Node.js** (JavaScript) |
-| **Frameworks** | **Django**, **Django REST Framework (DRF)**, **Express.js** |
-| **API** | RESTful APIs, GraphQL |
-
-### 💾 Databases & DevOps
-| Skill | Technologies |
-| :--- | :--- |
-| **Databases** | **PostgreSQL**, MySQL, MongoDB, SQLite |
-| **Cloud/Hosting** | AWS (EC2, S3), Heroku, Netlify, Vercel |
-| **Tools** | **Git**, **GitHub**, Docker, CI/CD (Basic) |
-
-### 🤖 AI/ML Integration
-| Skill | Technologies |
-| :--- | :--- |
-| **Libraries** | **OpenCV**, **dlib** (Computer Vision) |
-| **APIs** | OpenAI GPT, Vambo AI (Multilingual Support) |
-| **Concepts** | Real-time object detection, Speech-to-Text |
+<img src="https://camo.githubusercontent.com/50e2ef60af7666a774181b6761da7b21f52fbb9fd3e7f34579688b7d6a5a5b59/68747470733a2f2f632e74656e6f722e636f6d2f476653582d753756474d3441414141432f636f64696e672e676966" alt="Animated GIF of a person coding" width="400" />
 
 ---
 
-## ✨ Featured Projects
+### 🛠️ Tech Stack & Expertise
 
-A selection of repositories demonstrating my technical range and ability to solve real-world problems:
+My expertise spans modern web development, backend architecture, and data integration.
 
-* **🚗 Drowsiness Detection System**
-    > Real-time drowsiness detection using **OpenCV** and **dlib**, featuring multi-language integration via Vambo AI. A critical solution for road safety.
-    > [**Repository Link »**](https://github.com/levisrabah/drowsiness-detection)
-
-* **🎟️ Gospel Melodies Ticketing Platform**
-    > A complete event ticketing system built with a robust backend, featuring secure **M-Pesa integration** for payments and a dedicated **Admin Dashboard**.
-    > [**Repository Link »**](https://github.com/levisrabah/gospel-melodies-ticketing)
-
-* **🌍 Multi-Language Transcriber**
-    > A practical tool utilizing **Vambo AI's API** to provide multilingual speech-to-text transcription, specifically targeting support for African languages.
-    > [**Repository Link »**](https://github.com/levisrabah/multi-lang-transcriber)
-
-* **🧠 Node.js AI Chat Demo**
-    > A foundational demo showcasing the integration of **OpenAI's GPT model** into a simple Node.js application with a terminal interface.
-    > [**Repository Link »**](https://github.com/levisrabah/node-ai-chat)
-
-**[Explore more of my work on my GitHub profile »](https://github.com/levisrabah?tab=repositories)**
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind" alt="Frontend Skills" />
+  <br>
+  <img src="https://skillicons.dev/icons?i=py,django,nodejs,express" alt="Backend Skills" />
+  <br>
+  <img src="https://skillicons.dev/icons?i=sql,mysql,postgres,mongodb,git,aws,docker" alt="Database & DevOps Skills" />
+</p>
 
 ---
 
-## 📊 My GitHub Insights
+### 🚀 View My Work
+
+I focus on creating high-impact solutions. You can explore my repositories and contributions directly on my profile:
+
+**[GitHub Profile »](https://github.com/levisrabah?tab=repositories)**
+
+---
+
+### 📊 My GitHub Insights
 
 | Stats & Activity | Top Languages |
 | :--- | :--- |
@@ -76,14 +39,12 @@ A selection of repositories demonstrating my technical range and ability to solv
 
 ---
 
-## 💬 Let's Connect & Collaborate!
+### 💬 Let's Connect!
 
-I'm always open to discussing new tech, collaboration opportunities, or contributing to impactful open-source projects. Feel free to reach out!
+I am open to collaboration opportunities, tech discussions, and connecting with other developers.
 
-* **📧 Email:** [Your Email Address] (Placeholder - *Don't forget to add your real email!*)
-* **🔗 LinkedIn:** [Your LinkedIn Profile Link] (Placeholder - *It's great for networking!*)
-
----
+* **🔗 LinkedIn:** [https://www.linkedin.com/in/levis-rabah/](https://www.linkedin.com/in/levis-rabah/)
+* **📧 Email:** [levisrabah@gmail.com](mailto:levisrabah@gmail.com)
 
 ***
 *Random Dev Insight:* "First, solve the problem. Then, write the code."
