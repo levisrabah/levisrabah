@@ -5,7 +5,7 @@
 
 ---
 
-### 🛠️ Tech Stack & Expertise
+### Tech Stack & Expertise
 
 My expertise spans modern web development, backend architecture, and data integration.
 
@@ -19,7 +19,7 @@ My expertise spans modern web development, backend architecture, and data integr
 
 ---
 
-### 🚀 View My Work
+### View My Work
 
 I focus on creating high-impact solutions. You can explore my repositories and contributions directly on my profile:
 
@@ -27,7 +27,7 @@ I focus on creating high-impact solutions. You can explore my repositories and c
 
 ---
 
-### 📊 My GitHub Insights
+### My GitHub Insights
 
 | Stats & Activity | Top Languages |
 | :--- | :--- |
@@ -43,8 +43,8 @@ I focus on creating high-impact solutions. You can explore my repositories and c
 
 I am open to collaboration opportunities, tech discussions, and connecting with other developers.
 
-* **🔗 LinkedIn:** [https://www.linkedin.com/in/levis-rabah/](https://www.linkedin.com/in/levis-rabah/)
-* **📧 Email:** [levisrabah@gmail.com](mailto:levisrabah@gmail.com)
+* **LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/levis-rabah/)
+* **Email:** [Send me an Email](mailto:levisrabah@gmail.com)
 
 ***
 *Random Dev Insight:* "First, solve the problem. Then, write the code."
