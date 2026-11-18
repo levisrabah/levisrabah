@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Animated terminal: connecting to a server and deploying to production">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 15px; }
+    .p { fill: #2ecc71; }
+    .c { fill: #e6edf3; }
+    .o { fill: #8fa3bf; }
+    .ok { fill: #3fb950; }
+  </style>
+
+  <!-- window -->
+  <rect x="0.5" y="0.5" width="899" height="329" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5 12.5a12 12 0 0 1 12-12h875a12 12 0 0 1 12 12V38H0.5z" fill="#161b22"/>
+  <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="20" r="6" fill="#27c93f"/>
+  <text x="450" y="25" text-anchor="middle" class="mono o" style="font-size:13px">levis@prod-01: ~</text>
+
+  <!-- line 1 -->
+  <text x="28" y="76" class="mono"><tspan class="p">$ </tspan><tspan class="c">ssh levis@prod-01</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.031;0.035;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 2 -->
+  <text x="28" y="102" class="mono o">Connected. Linux prod-01 x86_64
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.125;0.129;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 3 -->
+  <text x="28" y="132" class="mono"><tspan class="p">$ </tspan><tspan class="c">systemctl status api.service</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.219;0.223;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 4 -->
+  <text x="28" y="158" class="mono"><tspan class="ok">●</tspan><tspan class="o"> api.service  </tspan><tspan class="ok">active (running)</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3125;0.3165;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 5 -->
+  <text x="28" y="188" class="mono"><tspan class="p">$ </tspan><tspan class="c">docker compose up -d</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.406;0.410;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 6 -->
+  <text x="28" y="214" class="mono"><tspan class="ok">✔</tspan><tspan class="o"> api   </tspan><tspan class="ok">✔</tspan><tspan class="o"> db   </tspan><tspan class="ok">✔</tspan><tspan class="o"> cache   </tspan><tspan class="ok">✔</tspan><tspan class="o"> nginx</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.504;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 7 -->
+  <text x="28" y="244" class="mono"><tspan class="p">$ </tspan><tspan class="c">./deploy.sh --env production</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.594;0.598;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 8 -->
+  <text x="28" y="270" class="mono"><tspan class="ok">✔</tspan><tspan class="o"> tests passed   </tspan><tspan class="ok">✔</tspan><tspan class="o"> build ok   </tspan><tspan class="ok">✔</tspan><tspan class="ok"> shipped to production</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.719;0.723;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </text>
+  <!-- line 9 + cursor -->
+  <g>
+    <text x="28" y="300" class="mono p">$</text>
+    <rect x="44" y="286" width="9" height="17" fill="#2ecc71">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.8125;0.8165;0.94;1" dur="16s" repeatCount="indefinite"/>
+  </g>
+</svg>

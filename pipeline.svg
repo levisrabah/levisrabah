@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="900" height="170" role="img" aria-label="Pipeline: code, build, test, deploy, live">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="899" height="169" rx="16" fill="#0b1220" stroke="#1f2f46"/>
+  <text x="35" y="30" class="mono" font-size="14" fill="#3498db">// from commit to production</text>
+
+  <!-- connectors -->
+  <g stroke="#3498db" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="4 5" fill="none">
+    <path d="M165,85 H202"><animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M340,85 H377"><animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M515,85 H552"><animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M690,85 H727"><animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.2s" repeatCount="indefinite"/></path>
+  </g>
+  <g fill="#3498db" fill-opacity="0.7">
+    <polygon points="202,79 211,85 202,91"/>
+    <polygon points="377,79 386,85 377,91"/>
+    <polygon points="552,79 561,85 552,91"/>
+    <polygon points="727,79 736,85 727,91"/>
+  </g>
+
+  <!-- stage boxes -->
+  <g fill="#0d1b2a" stroke="#2b4a6b" stroke-width="1.5">
+    <rect x="35" y="50" width="130" height="70" rx="10"/>
+    <rect x="210" y="50" width="130" height="70" rx="10"/>
+    <rect x="385" y="50" width="130" height="70" rx="10"/>
+    <rect x="560" y="50" width="130" height="70" rx="10"/>
+    <rect x="735" y="50" width="130" height="70" rx="10"/>
+  </g>
+
+  <!-- stage highlights, synced to the packet (6s loop) -->
+  <g fill="#2ecc71" stroke="#2ecc71" stroke-width="1.5">
+    <rect x="35" y="50" width="130" height="70" rx="10" opacity="0">
+      <animate attributeName="opacity" values="0.35;0;0" keyTimes="0;0.1;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="210" y="50" width="130" height="70" rx="10" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.35;0;0" keyTimes="0;0.15;0.25;0.35;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="385" y="50" width="130" height="70" rx="10" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.35;0;0" keyTimes="0;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="560" y="50" width="130" height="70" rx="10" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.35;0;0" keyTimes="0;0.65;0.75;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="735" y="50" width="130" height="70" rx="10" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.35" keyTimes="0;0.9;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- labels -->
+  <g text-anchor="middle">
+    <text x="100" y="82" class="sans" font-size="17" font-weight="700" fill="#e6edf3">CODE</text>
+    <text x="100" y="103" class="mono" font-size="11" fill="#8fa3bf">git push</text>
+    <text x="275" y="82" class="sans" font-size="17" font-weight="700" fill="#e6edf3">BUILD</text>
+    <text x="275" y="103" class="mono" font-size="11" fill="#8fa3bf">docker build</text>
+    <text x="450" y="82" class="sans" font-size="17" font-weight="700" fill="#e6edf3">TEST</text>
+    <text x="450" y="103" class="mono" font-size="11" fill="#8fa3bf">automated checks</text>
+    <text x="625" y="82" class="sans" font-size="17" font-weight="700" fill="#e6edf3">DEPLOY</text>
+    <text x="625" y="103" class="mono" font-size="11" fill="#8fa3bf">ship to server</text>
+    <text x="800" y="82" class="sans" font-size="17" font-weight="700" fill="#2ecc71">LIVE</text>
+    <text x="800" y="103" class="mono" font-size="11" fill="#8fa3bf">serving users</text>
+  </g>
+
+  <!-- live indicator -->
+  <circle cx="850" cy="65" r="4" fill="#2ecc71"/>
+  <circle cx="850" cy="65" r="4" fill="none" stroke="#2ecc71" stroke-width="2">
+    <animate attributeName="r" values="4;11" dur="1.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- travelling packet -->
+  <g filter="url(#glow)">
+    <circle r="7" fill="#2ecc71" opacity="0.35">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M100,85 H800"/>
+    </circle>
+    <circle r="4" fill="#ffffff">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M100,85 H800"/>
+    </circle>
+  </g>
+
+  <text x="450" y="153" text-anchor="middle" class="mono" font-size="14" fill="#8fa3bf">automate  ·  monitor  ·  ship  ·  repeat</text>
+</svg>

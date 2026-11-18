@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Levis Rabah, Software Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#10213a"/>
+      <stop offset="1" stop-color="#0b2a2f"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3498db"/>
+      <stop offset="1" stop-color="#2ecc71"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#3498db" stroke-opacity="0.08"/>
+    </pattern>
+    <clipPath id="round"><rect width="900" height="260" rx="16"/></clipPath>
+    <clipPath id="reveal">
+      <rect x="60" y="150" height="32" width="0">
+        <animate attributeName="width" values="0;520;520;0" keyTimes="0;0.45;0.9;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <g clip-path="url(#round)">
+    <rect width="900" height="260" fill="url(#bg)"/>
+    <rect width="900" height="260" fill="url(#grid)"/>
+
+    <!-- scanning line -->
+    <rect x="0" y="-4" width="900" height="3" fill="#2ecc71" opacity="0.22">
+      <animate attributeName="y" from="-4" to="260" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- network: links -->
+    <g stroke="#3498db" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 6" fill="none">
+      <path d="M610,60 L720,45"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M720,45 L830,95"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M610,60 L690,130"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M720,45 L690,130"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M830,95 L790,170"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M690,130 L790,170"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M690,130 L620,200"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+      <path d="M790,170 L850,210"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/></path>
+    </g>
+
+    <!-- network: data packets -->
+    <g fill="#2ecc71" filter="url(#glow)">
+      <circle r="3.5"><animateMotion dur="2.6s" repeatCount="indefinite" path="M610,60 L720,45"/></circle>
+      <circle r="3.5"><animateMotion dur="3.2s" repeatCount="indefinite" path="M720,45 L830,95"/></circle>
+      <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite" path="M690,130 L790,170"/></circle>
+      <circle r="3.5"><animateMotion dur="2.2s" repeatCount="indefinite" path="M790,170 L850,210"/></circle>
+      <circle r="3.5"><animateMotion dur="3.6s" repeatCount="indefinite" path="M620,200 L690,130"/></circle>
+      <circle r="3.5"><animateMotion dur="3s" repeatCount="indefinite" path="M610,60 L690,130"/></circle>
+    </g>
+
+    <!-- network: nodes -->
+    <g fill="#0b1220" stroke="#3498db" stroke-width="2">
+      <circle cx="610" cy="60" r="6"><animate attributeName="r" values="6;8;6" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="720" cy="45" r="6"><animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="830" cy="95" r="6"><animate attributeName="r" values="6;8;6" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="790" cy="170" r="6"><animate attributeName="r" values="6;8;6" dur="3.3s" repeatCount="indefinite"/></circle>
+      <circle cx="620" cy="200" r="6"><animate attributeName="r" values="6;8;6" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="850" cy="210" r="6"><animate attributeName="r" values="6;8;6" dur="2.5s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- hub node -->
+    <circle cx="690" cy="130" r="10" fill="#2ecc71" filter="url(#glow)">
+      <animate attributeName="r" values="10;13;10" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- availability pulse -->
+    <circle cx="68" cy="56" r="5" fill="#2ecc71"/>
+    <circle cx="68" cy="56" r="5" fill="none" stroke="#2ecc71" stroke-width="2">
+      <animate attributeName="r" values="5;14" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="88" y="61" class="mono" font-size="13" letter-spacing="2" fill="#2ecc71">AVAILABLE FOR WORK</text>
+
+    <!-- name -->
+    <text x="60" y="122" class="sans" font-size="60" font-weight="800" fill="url(#title)" filter="url(#glow)">Levis Rabah
+      <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="-30 0" to="0 0" dur="1.2s" fill="freeze"/>
+    </text>
+
+    <!-- typed subtitle -->
+    <g clip-path="url(#reveal)">
+      <text x="60" y="173" class="mono" font-size="20" fill="#e6edf3">Software Engineer · System Design · DevOps</text>
+    </g>
+    <rect x="60" y="154" width="10" height="22" fill="#2ecc71">
+      <animate attributeName="x" values="60;580;580;60" keyTimes="0;0.45;0.9;1" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- tagline -->
+    <text x="60" y="219" class="mono" font-size="15" fill="#8fa3bf">I build solutions  ·  manage servers  ·  ship to production</text>
+  </g>
+  <rect x="0.5" y="0.5" width="899" height="259" rx="16" fill="none" stroke="#1f2f46"/>
+</svg>
